@@ -1142,19 +1142,3 @@ cat > /home/claude/vicsandi-prim/index.html << 'HTMLEOF'
     }, { threshold: 0.3 });
     statsObs.observe(statsSection);
   }
-
-  /* ===== AN CURENT ÎN FOOTER ===== */
-  (function() {
-    const copyEl = document.querySelector('.footer-copy');
-    if (copyEl) {
-      copyEl.textContent = copyEl.textContent.replace(/© \d{4}/, `© ${new Date().getFullYear()}`);
-    }
-  })();
-</script>
-</body>
-</html>
-HTMLEOF
-echo "index.html creat — $(wc -c < /home/claude/vicsandi-prim/index.html) bytes"
-Output
-
-index.html creat — 57807 bytes
